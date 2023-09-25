@@ -5,6 +5,7 @@ using namespace std;
 bool isPrime[100000010];
 int Prime[6000010],cnt=0;
 //Prime存质数，isPrime[i]==1表示是i是素数
+//Prime[0] = 0, Prime[n]代表第n个素数
 void GetPrime(int n)
 {
     memset(isPrime,1,sizeof(isPrime));
@@ -20,17 +21,4 @@ void GetPrime(int n)
                 break;
         }
     }
-}
-int main()
-{
-    int n,q;
-    scanf("%d %d",&n,&q);
-    GetPrime(n);
-    while(q--)
-    {
-        int k;
-        scanf("%d",&k);
-        printf("%d\n",Prime[k]);
-    }
-    system("pause");
 }
