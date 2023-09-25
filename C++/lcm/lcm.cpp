@@ -15,3 +15,7 @@ lcm(a,b) = abs(a*b)/gcd(a,b)
 int gcd(int a,int b){
 	return b?gcd(b,a%b):a;
 }
+
+int lcm(int a,int b){
+    return abs(a * b)/gcd(a,b);
+}
