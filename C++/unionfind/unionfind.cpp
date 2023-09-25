@@ -5,7 +5,7 @@ const int maxn=1e5;
 int fa[maxn];
 void init(int n){
     for(int i=0;i<n;i++){
-        fa[i]=i;
+        fa[i]=i; 
     }
 }
 int find(int x){
